@@ -33,28 +33,224 @@
 
   <main id="contenu">
     <!-- ===== Accueil (hero) ===== -->
-    <section id="accueil" class="hero"></section>
+    <section id="accueil" class="hero">
+      <div class="hero__inner container">
+        <!-- Avatar : pour utiliser une photo, remplacez la ligne <span> ci-dessous par :
+             <img class="avatar" src="assets/photo.jpg" alt="Photo de Christian EL KHOURY" width="160" height="160"> -->
+        <span class="avatar" aria-hidden="true">CK</span>
+
+        <div class="hero__text">
+          <h1 class="hero__name">Christian <span class="hero__surname">EL KHOURY</span></h1>
+          <p class="hero__title">Étudiant en MSc Healthcare Innovation and Data Science à emlyon business school</p>
+          <p class="hero__role">Stagiaire Innovation en Santé &amp; Data</p>
+          <p class="hero__search">
+            <span class="badge">Recherche stage de 4 à 6 mois</span>
+            <span class="hero__meta">emlyon · Paris · dès mars / avril</span>
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Me contacter</a>
+            <button class="btn btn--ghost js-print" type="button" hidden>Télécharger le CV (PDF)</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== Expériences ===== -->
-    <section id="experiences" class="section"></section>
+    <section id="experiences" class="section" aria-labelledby="experiences-titre">
+      <div class="container">
+        <h2 class="section__title" id="experiences-titre">Expériences professionnelles</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Stage d’Analyste QA</h3>
+                <p class="card__meta"><span class="card__org">Higher Education Marketing</span> <time>03.2026 – 07.2026</time></p>
+              </header>
+              <ul class="card__list">
+                <li>Création de plans, de cas et de scénarios de test pour des produits numériques.</li>
+                <li>Tests manuels : fonctionnels, de régression, d’interface (UI) et d’utilisabilité.</li>
+                <li>Identification, documentation et suivi des bugs et problèmes techniques.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Stage d’Assistant à la Mise en Œuvre de Projet</h3>
+                <p class="card__meta"><span class="card__org">arcenciel</span> <time>06.2025 – 08.2025</time></p>
+              </header>
+              <ul class="card__list">
+                <li>Assistance au processus d’approvisionnement en matériel.</li>
+                <li>Suivi des dossiers et du nombre de bénéficiaires servis par le projet.</li>
+                <li>Contribution à l’élaboration des rapports d’avancement et financiers.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Stage de Management</h3>
+                <p class="card__meta"><span class="card__org">Carrefour</span> <time>06.2024 – 07.2024</time></p>
+              </header>
+              <ul class="card__list">
+                <li>Soutien à la gestion quotidienne des opérations en magasin.</li>
+                <li>Assistance à la supervision des équipes et à la coordination des tâches.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Vice-Président – Association étudiante</h3>
+                <p class="card__meta"><span class="card__org">The Coffee District, ISG, Paris</span> <time>2023 – 2026</time></p>
+              </header>
+              <ul class="card__list">
+                <li>Coordination de la planification stratégique et des événements pour promouvoir la culture du café et la communauté.</li>
+                <li>Direction des initiatives de l’équipe, assurant des opérations efficaces.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
 
     <!-- ===== Formations ===== -->
-    <section id="formations" class="section"></section>
+    <section id="formations" class="section section--alt" aria-labelledby="formations-titre">
+      <div class="container">
+        <h2 class="section__title" id="formations-titre">Formations</h2>
+        <ol class="timeline">
+          <li class="timeline__item timeline__item--current">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">MSc in Healthcare Innovation and Data Science</h3>
+                <p class="card__meta"><span class="card__org">emlyon business school, Lyon</span> <time>2026 – en cours</time></p>
+              </header>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Bachelor en Gestion Internationale (BMI)</h3>
+                <p class="card__meta"><span class="card__org">ISG International Business School, Paris</span> <time>2023 – 2026</time></p>
+              </header>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Baccalauréat général et technologique</h3>
+                <p class="card__meta"><span class="card__org">Collège des Frères Maristes Champville, Dik El Mehdi, Liban</span> <time>2009 – 2023</time></p>
+              </header>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
 
     <!-- ===== Compétences ===== -->
-    <section id="competences" class="section"></section>
+    <section id="competences" class="section" aria-labelledby="competences-titre">
+      <div class="container">
+        <h2 class="section__title" id="competences-titre">Compétences</h2>
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="card__title">Techniques</h3>
+            <ul class="tags">
+              <li class="tag">Excel</li>
+              <li class="tag">PowerPoint</li>
+              <li class="tag">Word (base)</li>
+              <li class="tag">Python (notions)</li>
+              <li class="tag">Power BI</li>
+              <li class="tag">Tableau</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Personnelles</h3>
+            <ul class="tags tags--soft">
+              <li class="tag">Persévérant</li>
+              <li class="tag">Esprit d’équipe</li>
+              <li class="tag">Bon relationnel</li>
+              <li class="tag">Capacité d’adaptation</li>
+              <li class="tag">Sens de l’initiative</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== Langues ===== -->
-    <section id="langues" class="section"></section>
+    <section id="langues" class="section section--alt" aria-labelledby="langues-titre">
+      <div class="container">
+        <h2 class="section__title" id="langues-titre">Langues</h2>
+        <ul class="grid grid--3 languages">
+          <li class="card language">
+            <h3 class="card__title">Arabe</h3>
+            <p class="language__level">Langue maternelle</p>
+            <span class="meter" style="--level: 100%" aria-hidden="true"></span>
+          </li>
+          <li class="card language">
+            <h3 class="card__title">Français</h3>
+            <p class="language__level">Courant</p>
+            <span class="meter" style="--level: 85%" aria-hidden="true"></span>
+          </li>
+          <li class="card language">
+            <h3 class="card__title">Anglais</h3>
+            <p class="language__level">Courant / IELTS 6.5</p>
+            <span class="meter" style="--level: 80%" aria-hidden="true"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- ===== Intérêts ===== -->
-    <section id="interets" class="section"></section>
+    <section id="interets" class="section" aria-labelledby="interets-titre">
+      <div class="container">
+        <h2 class="section__title" id="interets-titre">Intérêts</h2>
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title">Bénévolat</h3>
+            <ul class="card__list">
+              <li>Secouriste bénévole – Croix-Rouge française <time>(2025 – présent)</time></li>
+              <li>Scouts du Liban <time>(2013 – 2023)</time></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Natation</h3>
+            <ul class="card__list">
+              <li>Nageur en compétition nationale – LSA <time>(2012 – 2023)</time></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== Contact ===== -->
-    <section id="contact" class="section"></section>
+    <section id="contact" class="section section--contact" aria-labelledby="contact-titre">
+      <div class="container">
+        <h2 class="section__title" id="contact-titre">Contact</h2>
+        <p class="contact__intro">Disponible pour un stage de 4 à 6 mois à Paris, dès mars / avril.</p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:christiankh2005@hotmail.com">christiankh2005@hotmail.com</a>
+          </li>
+          <li>
+            <span class="contact__label">LinkedIn</span>
+            <a href="https://linkedin.com/in/christiankh" target="_blank" rel="noopener noreferrer">linkedin.com/in/christiankh<span class="visually-hidden"> (nouvel onglet)</span></a>
+          </li>
+          <li>
+            <span class="contact__label">Localisation</span>
+            <span>Lyon, France</span>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <!-- ===== Pied de page ===== -->
-  <footer class="site-footer"></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Christian EL KHOURY</p>
+    </div>
+  </footer>
 </body>
 </html>
