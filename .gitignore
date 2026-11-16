@@ -8,3 +8,6 @@
 
 # Local build output
 _site/
+
+# CV source (contains private contact details) — kept local only
+doc/

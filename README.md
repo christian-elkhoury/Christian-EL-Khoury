@@ -1,7 +1,7 @@
 # CV — Christian EL KHOURY
 
 Site web personnel responsive (desktop et mobile) généré à partir de mon CV
-(`doc/cv-christian-el-khoury.md`), déployé automatiquement sur GitHub Pages.
+(fichier local `doc/cv-christian-el-khoury.md`, volontairement non versionné car il contient des coordonnées privées), déployé automatiquement sur GitHub Pages.
 
 **Site en ligne :** https://<username>.github.io/cv/
 
