@@ -14,6 +14,7 @@
   <meta property="og:locale" content="fr_FR">
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -21,7 +22,12 @@
   <!-- ===== En-tête et navigation ===== -->
   <header class="site-header">
     <nav class="nav" aria-label="Navigation principale">
-      <a class="nav__brand" href="#accueil">CK</a>
+      <a class="nav__brand" href="#accueil" aria-label="Christian EL KHOURY — retour en haut">CK</a>
+      <!-- Bouton menu mobile : affiché uniquement si JavaScript est actif -->
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-list" hidden>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
       <ul class="nav__list" id="nav-list">
         <li><a href="#experiences">Expériences</a></li>
         <li><a href="#formations">Formations</a></li>

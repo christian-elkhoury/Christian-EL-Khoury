@@ -773,3 +773,118 @@ a:hover {
     display: none;
   }
 }
+
+/* =========================================================
+   Interactivité (classe .js ajoutée par js/main.js)
+   ========================================================= */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Menu hamburger sous 768px, uniquement si JS est actif */
+@media (max-width: 767.98px) {
+  .js .nav {
+    flex-wrap: nowrap;
+  }
+
+  .js .nav__toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  .js .nav__toggle[hidden] {
+    display: none;
+  }
+
+  /* Trois barres dessinées en CSS, transformées en croix à l'ouverture */
+  .nav__toggle-bar,
+  .nav__toggle-bar::before,
+  .nav__toggle-bar::after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .nav__toggle-bar {
+    position: relative;
+  }
+
+  .nav__toggle-bar::before,
+  .nav__toggle-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  .nav__toggle-bar::before {
+    top: -6px;
+  }
+
+  .nav__toggle-bar::after {
+    top: 6px;
+  }
+
+  .nav__toggle[aria-expanded="true"] .nav__toggle-bar {
+    background: transparent;
+  }
+
+  .nav__toggle[aria-expanded="true"] .nav__toggle-bar::before {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .nav__toggle[aria-expanded="true"] .nav__toggle-bar::after {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .js .nav__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-2) var(--space-4) var(--space-4);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow);
+  }
+
+  .js .nav__list.is-open {
+    display: flex;
+  }
+
+  .js .nav__list a {
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius);
+    font-size: var(--fs-base);
+  }
+}
+
+@media print {
+  .nav__toggle {
+    display: none !important;
+  }
+}
